@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './style/index.css';
 
 export interface GitHubCornersProps {
@@ -11,35 +11,7 @@ export interface GitHubCornersProps {
 }
 
 export default (props: GitHubCornersProps = {}) => {
-  const [size, setSize] = useState(props.size || 80);
-  const [bgColor, setBgColor] = useState(props.bgColor || '#151513');
-  const [color, setColor] = useState(props.color || '#fff');
-  const [position, setPosition] = useState(props.position || 'right');
-
-  useEffect(() => {
-    if (props.size && size !== props.size) {
-      setSize(props.size);
-    }
-  }, [size, props.size]);
-
-  useEffect(() => {
-    if (props.bgColor && bgColor !== props.bgColor) {
-      setBgColor(props.bgColor);
-    }
-  }, [bgColor, props.bgColor]);
-
-  useEffect(() => {
-    if (props.color && color !== props.color) {
-      setColor(props.color);
-    }
-  }, [color, props.color]);
-
-  useEffect(() => {
-    if (props.position && position !== props.position) {
-      setPosition(props.position);
-    }
-  }, [position, props.position]);
-
+  const { size = 80, bgColor = '#151513', color = '#fff', position = 'right' } = props;
   const styl = position === 'left' ? { left: 0, transform: 'scale(-1, 1)' } : { right: 0 };
   
   return (
