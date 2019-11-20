@@ -16,6 +16,7 @@ const App: React.FC = () => {
         bgColor={bgColor}
         color={color}
         position={position}
+        target="__blank"
         href="https://github.com/uiwjs/react-github-corners"
       />
       <div className="App-header">

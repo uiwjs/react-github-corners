@@ -2,7 +2,7 @@
 import React from 'react';
 import './style/index.css';
 
-export interface GitHubCornersProps {
+export interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   href?: string;
   size?: number;
   bgColor?: string;
@@ -11,11 +11,11 @@ export interface GitHubCornersProps {
 }
 
 export default (props: GitHubCornersProps = {}) => {
-  const { size = 80, bgColor = '#151513', color = '#fff', position = 'right' } = props;
+  const { size = 80, bgColor = '#151513', color = '#fff', position = 'right', ...otherProps } = props;
   const styl = position === 'left' ? { left: 0, transform: 'scale(-1, 1)' } : { right: 0 };
   
   return (
-    <a href={props.href} className="github-corner" aria-label="View source on GitHub">
+    <a href={props.href} aria-label="View source on GitHub" {...otherProps} className="github-corner" >
       <svg
         width={size}
         height={size}
