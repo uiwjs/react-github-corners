@@ -18,6 +18,21 @@ npm install --save @uiw/react-github-corners
 yarn add @uiw/react-github-corners
 ```
 
+## Usage
+
+```jsx
+import GitHubCorners from '@uiw/react-github-corners';
+
+function Demo() {
+  return (
+    <GitHubCorners
+      position="left"
+      href="https://github.com/uiwjs/react-github-corners"
+    >
+  )
+}
+```
+
 ## Documentation
 
 | Property Name | Type | Default Value | Description |
