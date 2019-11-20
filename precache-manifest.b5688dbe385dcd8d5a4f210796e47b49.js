@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1fd83a04200dd0672e13f30451e5e995",
+    "revision": "2d4b93782f8ca79d51c8b0c87a94d2d3",
     "url": "/react-github-corners/index.html"
   },
   {
-    "revision": "ec6f927efba4d521bc39",
+    "revision": "24de5b1e478d1e396d0c",
     "url": "/react-github-corners/static/css/main.e0e2716c.css"
   },
   {
-    "revision": "ec6f927efba4d521bc39",
-    "url": "/react-github-corners/static/js/main.27a9a91a.js"
+    "revision": "24de5b1e478d1e396d0c",
+    "url": "/react-github-corners/static/js/main.533bcbf5.js"
   },
   {
     "revision": "49f98c8e3027a1c3b2b7a0d65b84a6a5",
