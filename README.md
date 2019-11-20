@@ -26,7 +26,7 @@ yarn add @uiw/react-github-corners
 | size | String | `80` | The width and height of the corner. |
 | bgColor | String | `#151513` | The background color of the corner. |
 | color | String | `#fff` | The Github logo color of the corner. |
-| position | String | `#fff` | The position of corner. |
+| position | String | `left`/`right` | The position of corner. |
 
 ## Development
 
