@@ -17,6 +17,7 @@
     "ts:watch": "tsbb watch --env-name esm:dev --env-name cjs --target react",
     "ts:build": "tsbb build --target react"
   },
+  "homepage": "https://uiwjs.github.io/react-github-corners",
   "repository": {
     "type": "git",
     "url": "https://github.com/uiwjs/react-github-corners.git"

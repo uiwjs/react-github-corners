@@ -30,17 +30,17 @@ const App: React.FC = () => {
           <button onClick={() => {setPosition('right')}}>Right</button>
         </div>
         <div>
-          <button onClick={() => {setBgColor('#F95C2B')}}>Orange #F95C2B</button>
-          <button onClick={() => {setBgColor('#28a745')}}>Green #28a745</button>
-          <button onClick={() => {setBgColor('#dc3545')}}>Red #dc3545</button>
-          <button onClick={() => {setBgColor('#008EF0')}}>Blue #008EF0</button>
-          <button onClick={() => {setBgColor('#fff'), setColor('#151513')}}>Light</button>
-          <button onClick={() => {setBgColor('#151513'), setColor('#fff')}}>Dark</button>
+          <button onClick={() => {setBgColor('#F95C2B')}} style={{ backgroundColor: '#F95C2B' }}>Orange #F95C2B</button>
+          <button onClick={() => {setBgColor('#28a745')}} style={{ backgroundColor: '#28a745' }}>Green #28a745</button>
+          <button onClick={() => {setBgColor('#dc3545')}} style={{ backgroundColor: '#dc3545' }}>Red #dc3545</button>
+          <button onClick={() => {setBgColor('#008EF0')}} style={{ backgroundColor: '#008EF0' }}>Blue #008EF0</button>
+          <button onClick={() => {setBgColor('#fff'), setColor('#151513')}} style={{ backgroundColor: '#fff', color: '#151513' }}>Light</button>
+          <button onClick={() => {setBgColor('#151513'), setColor('#fff')}} style={{ backgroundColor: '#151513', color: '#fff' }}>Dark</button>
         </div>
         <div>
         </div>
         <pre className="info">
-          {MDStr}
+          {MDStr.replace(/([\s\S]*)<!--dividing-->/, '')}
         </pre>
       </div>
     </div>

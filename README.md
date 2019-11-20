@@ -8,6 +8,8 @@ react-github-corners
 [![](https://img.shields.io/npm/v/@uiw/react-github-corners.svg)](https://www.npmjs.com/package/@uiw/react-github-corners)
 [![](https://jaywcjlove.github.io/sb/ico/gitee.svg)](https://gitee.com/uiw/react-github-corners)
 
+<!--dividing-->
+
 Add a Github corner to your project page, This [GitHub corners](https://uiwjs.github.io/react-github-corners) for [**@react**](https://github.com/facebook/react) component. Visit [https://uiwjs.github.io/react-github-corners](https://uiwjs.github.io/react-github-corners) to preview the example effects.
 
 ```bash
