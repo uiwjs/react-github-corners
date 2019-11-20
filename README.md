@@ -28,7 +28,7 @@ function Demo() {
     <GitHubCorners
       position="left"
       href="https://github.com/uiwjs/react-github-corners"
-    >
+    />
   )
 }
 ```
