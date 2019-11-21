@@ -27,6 +27,15 @@ body {
   color: white;
 }
 
+.App-footer {
+  padding: 10px 0 50px 0;
+}
+
+.App-footer a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
 .App-button {
   margin-bottom: 10px;
 }

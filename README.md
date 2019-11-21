@@ -4,7 +4,7 @@ react-github-corners
 [![](https://img.shields.io/github/issues/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/issues)
 [![](https://img.shields.io/github/forks/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/network)
 [![](https://img.shields.io/github/stars/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/stargazers)
-[![](https://img.shields.io/github/release/uiwjs/react-github-corners)](https://github.com/uiwjs/react-github-corners/releases)
+[![](https://img.shields.io/github/v/release/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/releases)
 [![](https://img.shields.io/npm/v/@uiw/react-github-corners.svg)](https://www.npmjs.com/package/@uiw/react-github-corners)
 [![](https://jaywcjlove.github.io/sb/ico/gitee.svg)](https://gitee.com/uiw/react-github-corners)
 

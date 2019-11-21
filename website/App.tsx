@@ -43,6 +43,23 @@ const App: React.FC = () => {
         <pre className="info">
           {MDStr.replace(/([\s\S]*)<!--dividing-->/, '')}
         </pre>
+        <div className="App-footer">
+          <a href="https://github.com/uiwjs/react-github-corners/issues">
+            <img src="https://img.shields.io/github/issues/uiwjs/react-github-corners.svg" />
+          </a>
+          <a href="https://github.com/uiwjs/react-github-corners/network">
+            <img src="https://img.shields.io/github/forks/uiwjs/react-github-corners.svg" />
+          </a>
+          <a href="https://github.com/uiwjs/react-github-corners/stargazers">
+            <img src="https://img.shields.io/github/stars/uiwjs/react-github-corners.svg" />
+          </a>
+          <a href="https://github.com/uiwjs/react-github-corners/releases">
+            <img src="https://img.shields.io/github/v/release/uiwjs/react-github-corners.svg" />
+          </a>
+          <a href="https://www.npmjs.com/package/@uiw/react-github-corners">
+            <img src="https://img.shields.io/npm/v/@uiw/react-github-corners.svg" />
+          </a>
+        </div>
       </div>
     </div>
   );
