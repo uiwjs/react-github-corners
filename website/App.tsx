@@ -19,18 +19,18 @@ const App: React.FC = () => {
         target="__blank"
         href="https://github.com/uiwjs/react-github-corners"
       />
-      <div className="App-header">
+      <div className="App-content">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           GitHub Corners for React.
         </p>
-        <div>
+        <div className="App-button">
           <button onClick={() => {setSize(120)}}>Set Size 120px</button>
           <button onClick={() => {setSize(80)}}>Set Size 80px</button>
           <button onClick={() => {setPosition('left')}}>Left</button>
           <button onClick={() => {setPosition('right')}}>Right</button>
         </div>
-        <div>
+        <div className="App-button">
           <button onClick={() => {setBgColor('#F95C2B')}} style={{ backgroundColor: '#F95C2B' }}>Orange #F95C2B</button>
           <button onClick={() => {setBgColor('#28a745')}} style={{ backgroundColor: '#28a745' }}>Green #28a745</button>
           <button onClick={() => {setBgColor('#dc3545')}} style={{ backgroundColor: '#dc3545' }}>Red #dc3545</button>

@@ -16,7 +16,7 @@ body {
   height: 40vmin;
 }
 
-.App-header {
+.App-content {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -27,13 +27,40 @@ body {
   color: white;
 }
 
+.App-button {
+  margin-bottom: 10px;
+}
+
+.App-button button {
+  position: relative;
+  display: inline-block;
+  border: 0 solid;
+  padding: 5px 10px;
+  margin: 0 2px;
+  font-size: 12px;
+  font-weight: 700;
+  text-shadow: 0 1px hsla(0, 0%, 100%, .9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.App-button button:hover {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.38);
+}
+
+.App-button button:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.38);
+}
+
 .App-link {
   color: #09d3ac;
 }
 
 .info {
   text-align: left;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   width: 820px;;
   padding-top: 10px;
   overflow: auto;
