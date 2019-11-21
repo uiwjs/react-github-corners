@@ -12,6 +12,8 @@ react-github-corners
 
 Add a Github corner to your project page, This [GitHub corners](https://uiwjs.github.io/react-github-corners) for [**@react**](https://github.com/facebook/react) component. Visit [https://uiwjs.github.io/react-github-corners](https://uiwjs.github.io/react-github-corners) to preview the example effects.
 
+Preview Example: [Github](https://uiwjs.github.io/react-github-corners) | [Gitee](https://uiw.gitee.io/react-github-corners/)
+
 ```bash
 npm install --save @uiw/react-github-corners
 # Via Yarn:
