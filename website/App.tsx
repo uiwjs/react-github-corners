@@ -16,6 +16,8 @@ const App: React.FC = () => {
         bgColor={bgColor}
         color={color}
         position={position}
+        fixed
+        zIndex={99}
         target="__blank"
         href="https://github.com/uiwjs/react-github-corners"
       />
