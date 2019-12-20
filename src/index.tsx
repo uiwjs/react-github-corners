@@ -9,10 +9,11 @@ export interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAncho
   color?: string;
   position?: 'left' | 'right';
   fixed?: boolean;
+  zIndex?: number;
 }
 
 export default (props: GitHubCornersProps = {}) => {
-  const { size = 80, fixed = false, bgColor = '#151513', color = '#fff', position = 'right', ...otherProps } = props;
+  const { size = 80, fixed = false, zIndex, bgColor = '#151513', color = '#fff', position = 'right', ...otherProps } = props;
   const styl = position === 'left' ? { left: 0, transform: 'scale(-1, 1)' } : { right: 0 };
   
   return (
@@ -27,6 +28,7 @@ export default (props: GitHubCornersProps = {}) => {
           position: fixed ? 'fixed' : 'absolute',
           border: 0,
           top: 0,
+          zIndex,
           ...styl,
         }}
         aria-hidden="true">

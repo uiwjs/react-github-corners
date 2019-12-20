@@ -44,6 +44,8 @@ function Demo() {
 | bgColor | String | `#151513` | The background color of the corner. |
 | color | String | `#fff` | The Github logo color of the corner. |
 | position | String | `left`/`right` | The position of corner. |
+| fixed | Boolean | `false` | It is positioned relative to the initial containing block established. |
+| zIndex | Number | - | Sets the z-order of a positioned element and its descendants or flex items. |
 
 ## Development
 
