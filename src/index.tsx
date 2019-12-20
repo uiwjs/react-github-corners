@@ -13,11 +13,11 @@ export interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAncho
 }
 
 export default (props: GitHubCornersProps = {}) => {
-  const { size = 80, fixed = false, zIndex, bgColor = '#151513', color = '#fff', position = 'right', ...otherProps } = props;
+  const { size = 80, fixed = false, zIndex, className, bgColor = '#151513', color = '#fff', position = 'right', ...otherProps } = props;
   const styl = position === 'left' ? { left: 0, transform: 'scale(-1, 1)' } : { right: 0 };
   
   return (
-    <a href={props.href} aria-label="View source on GitHub" {...otherProps} className="github-corner" >
+    <a href={props.href} aria-label="View source on GitHub" {...otherProps} className={'github-corner ' + className} >
       <svg
         width={size}
         height={size}
