@@ -3,21 +3,46 @@ import React from 'react';
 import './style/index.css';
 
 export interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  /**
+   * The link to your project page.
+   */
   href?: string;
+  /**
+   * The width and height of the corner. 
+   * Default: `80`
+   */
   size?: number;
+  /**
+   * The background color of the corner.
+   * Default: `#151513`
+   */
   bgColor?: string;
+  /**
+   * The Github logo color of the corner.
+   * Default: `#fff`
+   */
   color?: string;
+  /**
+   * The position of corner. 
+   * Default: `right`
+   */
   position?: 'left' | 'right';
+  /**
+   * It is positioned relative to the initial containing block established.
+   * Default: `false`
+   */
   fixed?: boolean;
+  /**
+   * Sets the z-order of a positioned element and its descendants or flex items.
+   */
   zIndex?: number;
 }
 
 export default (props: GitHubCornersProps = {}) => {
   const { size = 80, fixed = false, zIndex, className, bgColor = '#151513', color = '#fff', position = 'right', ...otherProps } = props;
   const styl = position === 'left' ? { left: 0, transform: 'scale(-1, 1)' } : { right: 0 };
-  
   return (
-    <a href={props.href} aria-label="View source on GitHub" {...otherProps} className={'github-corner ' + className} >
+    <a href={props.href} aria-label="View source on GitHub" {...otherProps} className={'github-corner ' + (className || '')} >
       <svg
         width={size}
         height={size}
