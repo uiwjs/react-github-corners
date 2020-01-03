@@ -37,8 +37,8 @@ const App: React.FC = () => {
           <button onClick={() => {setBgColor('#28a745')}} style={{ backgroundColor: '#28a745' }}>Green #28a745</button>
           <button onClick={() => {setBgColor('#dc3545')}} style={{ backgroundColor: '#dc3545' }}>Red #dc3545</button>
           <button onClick={() => {setBgColor('#008EF0')}} style={{ backgroundColor: '#008EF0' }}>Blue #008EF0</button>
-          <button onClick={() => {setBgColor('#fff'), setColor('#151513')}} style={{ backgroundColor: '#fff', color: '#151513' }}>Light</button>
-          <button onClick={() => {setBgColor('#151513'), setColor('#fff')}} style={{ backgroundColor: '#151513', color: '#fff' }}>Dark</button>
+          <button onClick={() => {setBgColor('#fff'); setColor('#151513')}} style={{ backgroundColor: '#fff', color: '#151513' }}>Light</button>
+          <button onClick={() => {setBgColor('#151513'); setColor('#fff')}} style={{ backgroundColor: '#151513', color: '#fff' }}>Dark</button>
         </div>
         <div>
         </div>
@@ -47,19 +47,19 @@ const App: React.FC = () => {
         </pre>
         <div className="App-footer">
           <a href="https://github.com/uiwjs/react-github-corners/issues">
-            <img src="https://img.shields.io/github/issues/uiwjs/react-github-corners.svg" />
+            <img src="https://img.shields.io/github/issues/uiwjs/react-github-corners.svg" alt="" />
           </a>
           <a href="https://github.com/uiwjs/react-github-corners/network">
-            <img src="https://img.shields.io/github/forks/uiwjs/react-github-corners.svg" />
+            <img src="https://img.shields.io/github/forks/uiwjs/react-github-corners.svg" alt="" />
           </a>
           <a href="https://github.com/uiwjs/react-github-corners/stargazers">
-            <img src="https://img.shields.io/github/stars/uiwjs/react-github-corners.svg" />
+            <img src="https://img.shields.io/github/stars/uiwjs/react-github-corners.svg" alt="" />
           </a>
           <a href="https://github.com/uiwjs/react-github-corners/releases">
-            <img src="https://img.shields.io/github/v/release/uiwjs/react-github-corners.svg" />
+            <img src="https://img.shields.io/github/v/release/uiwjs/react-github-corners.svg" alt="" />
           </a>
           <a href="https://www.npmjs.com/package/@uiw/react-github-corners">
-            <img src="https://img.shields.io/npm/v/@uiw/react-github-corners.svg" />
+            <img src="https://img.shields.io/npm/v/@uiw/react-github-corners.svg" alt="" />
           </a>
         </div>
       </div>
