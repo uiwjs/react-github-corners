@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import MarkdownPreview from '@uiw/react-markdown-preview';
 import logo from './logo.svg';
 import './App.css';
-import GitHubCorners, { GitHubCornersProps} from '../';
+import GitHubCorners, { GitHubCornersProps } from '../';
 import MDStr from '../README.md';
 
 export default () => {
@@ -21,7 +22,7 @@ export default () => {
         target="__blank"
         href="https://github.com/uiwjs/react-github-corners"
       />
-      <div className="App-content">
+      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           GitHub Corners for React.
@@ -40,28 +41,24 @@ export default () => {
           <button onClick={() => {setBgColor('#fff'); setColor('#151513')}} style={{ backgroundColor: '#fff', color: '#151513' }}>Light</button>
           <button onClick={() => {setBgColor('#151513'); setColor('#fff')}} style={{ backgroundColor: '#151513', color: '#fff' }}>Dark</button>
         </div>
-        <div>
-        </div>
-        <pre className="info">
-          {MDStr.replace(/([\s\S]*)<!--dividing-->/, '')}
-        </pre>
-        <div className="App-footer">
-          <a href="https://github.com/uiwjs/react-github-corners/issues">
-            <img src="https://img.shields.io/github/issues/uiwjs/react-github-corners.svg" alt="" />
-          </a>
-          <a href="https://github.com/uiwjs/react-github-corners/network">
-            <img src="https://img.shields.io/github/forks/uiwjs/react-github-corners.svg" alt="" />
-          </a>
-          <a href="https://github.com/uiwjs/react-github-corners/stargazers">
-            <img src="https://img.shields.io/github/stars/uiwjs/react-github-corners.svg" alt="" />
-          </a>
-          <a href="https://github.com/uiwjs/react-github-corners/releases">
-            <img src="https://img.shields.io/github/v/release/uiwjs/react-github-corners.svg" alt="" />
-          </a>
-          <a href="https://www.npmjs.com/package/@uiw/react-github-corners">
-            <img src="https://img.shields.io/npm/v/@uiw/react-github-corners.svg" alt="" />
-          </a>
-        </div>
+      </header>
+      <MarkdownPreview className="App-markdown" source={MDStr.replace(/([\s\S]*)<!--dividing-->/, '')} />
+      <div className="App-footer">
+        <a href="https://github.com/uiwjs/react-github-corners/issues">
+          <img src="https://img.shields.io/github/issues/uiwjs/react-github-corners.svg" alt="" />
+        </a>
+        <a href="https://github.com/uiwjs/react-github-corners/network">
+          <img src="https://img.shields.io/github/forks/uiwjs/react-github-corners.svg" alt="" />
+        </a>
+        <a href="https://github.com/uiwjs/react-github-corners/stargazers">
+          <img src="https://img.shields.io/github/stars/uiwjs/react-github-corners.svg" alt="" />
+        </a>
+        <a href="https://github.com/uiwjs/react-github-corners/releases">
+          <img src="https://img.shields.io/github/v/release/uiwjs/react-github-corners.svg" alt="" />
+        </a>
+        <a href="https://www.npmjs.com/package/@uiw/react-github-corners">
+          <img src="https://img.shields.io/npm/v/@uiw/react-github-corners.svg" alt="" />
+        </a>
       </div>
     </div>
   );

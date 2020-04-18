@@ -1,5 +1,6 @@
 react-github-corners
 ===
+<!--dividing-->
 
 [![](https://img.shields.io/github/issues/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/issues)
 [![](https://img.shields.io/github/forks/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/network)
@@ -8,7 +9,6 @@ react-github-corners
 [![](https://img.shields.io/npm/v/@uiw/react-github-corners.svg)](https://www.npmjs.com/package/@uiw/react-github-corners)
 [![](https://jaywcjlove.github.io/sb/ico/gitee.svg)](https://gitee.com/uiw/react-github-corners)
 
-<!--dividing-->
 
 Add a Github corner to your project page, This [GitHub corners](https://uiwjs.github.io/react-github-corners) for [**@react**](https://github.com/facebook/react) component. Visit [https://uiwjs.github.io/react-github-corners](https://uiwjs.github.io/react-github-corners) to preview the example effects.
 
@@ -35,7 +35,45 @@ function Demo() {
 }
 ```
 
-## Documentation
+## Props
+
+```typescript
+interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  /**
+   * The link to your project page.
+   */
+  href?: string;
+  /**
+   * The width and height of the corner. 
+   * Default: `80`
+   */
+  size?: number;
+  /**
+   * The background color of the corner.
+   * Default: `#151513`
+   */
+  bgColor?: string;
+  /**
+   * The Github logo color of the corner.
+   * Default: `#fff`
+   */
+  color?: string;
+  /**
+   * The position of corner. 
+   * Default: `right`
+   */
+  position?: 'left' | 'right';
+  /**
+   * It is positioned relative to the initial containing block established.
+   * Default: `false`
+   */
+  fixed?: boolean;
+  /**
+   * Sets the z-order of a positioned element and its descendants or flex items.
+   */
+  zIndex?: number;
+}
+```
 
 | Property Name | Type | Default Value | Description |
 | ---- | ---- | ---- | ---- |
@@ -49,17 +87,26 @@ function Demo() {
 
 ## Development
 
+Runs the project in development mode.  
+
 ```bash
-# Step 1, Run first, the listener component compiles the output .js file
+# Step 1, run first, listen to the component compile and output the .js file
 npm run ts:watch
-# Step 2, Listen for compiled output type .d.ts file
+# Step 2, listen for compilation output type .d.ts file
 npm run types:watch
-# Step 3, Development mode, listen to compile preview site instance
+# Step 3, development mode, listen to compile preview website instance
 npm run doc:dev
 ```
 
-Compile and release
+Builds the app for production to the build folder.
 
 ```bash
 npm run released
 ```
+
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+
+## License
+
+Licensed under the MIT License.
