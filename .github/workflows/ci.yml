@@ -1,8 +1,8 @@
 name: GitHub Actions Build and Deploy react-github-corners
 on:
   push:
-    # branches:
-    #   - master
+    branches:
+      - master
     tags:
       - v1.*
 jobs:
