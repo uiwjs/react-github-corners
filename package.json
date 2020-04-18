@@ -35,12 +35,15 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@types/react": "16.9.34",
-    "@types/react-dom": "16.9.6",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.4",
+    "@uiw/react-markdown-preview": "1.0.1",
+    "@uiw/react-shields": "1.1.0",
+    "@uiw/reset.css": "1.0.3",
     "kkt": "5.7.1",
     "raw-loader": "3.1.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
     "tsbb": "1.7.1"
   },
   "eslintConfig": {
