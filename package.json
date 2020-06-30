@@ -37,7 +37,7 @@
   "devDependencies": {
     "@types/react": "16.9.11",
     "@types/react-dom": "16.9.4",
-    "@uiw/react-markdown-preview": "1.0.2",
+    "@uiw/react-markdown-preview": "1.0.8",
     "@uiw/react-shields": "1.1.0",
     "@uiw/reset.css": "1.0.3",
     "kkt": "5.9.0",
