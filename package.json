@@ -39,7 +39,7 @@
     "@types/react-dom": "16.9.4",
     "@uiw/react-markdown-preview": "1.0.9",
     "@uiw/react-shields": "1.1.0",
-    "@uiw/reset.css": "1.0.3",
+    "@uiw/reset.css": "1.0.4",
     "kkt": "5.9.0",
     "raw-loader": "4.0.1",
     "react": "16.13.1",
