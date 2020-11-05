@@ -915,13 +915,15 @@
     "static/js/455.1d3caf88.chunk.js": "/react-github-corners/static/js/455.1d3caf88.chunk.js",
     "static/js/455.1d3caf88.chunk.js.map": "/react-github-corners/static/js/455.1d3caf88.chunk.js.map",
     "index.html": "/react-github-corners/index.html",
-    "precache-manifest.77c6705013f3f5e2072da3b8662ed034.js": "/react-github-corners/precache-manifest.77c6705013f3f5e2072da3b8662ed034.js",
     "service-worker.js": "/react-github-corners/service-worker.js",
+    "service-worker.js.map": "/react-github-corners/service-worker.js.map",
     "static/css/455.20c98c80.chunk.css.map": "/react-github-corners/static/css/455.20c98c80.chunk.css.map",
     "static/css/main.483bd0c4.chunk.css.map": "/react-github-corners/static/css/main.483bd0c4.chunk.css.map",
     "static/js/455.1d3caf88.chunk.js.LICENSE.txt": "/react-github-corners/static/js/455.1d3caf88.chunk.js.LICENSE.txt",
     "static/js/68.57f2fb8f.chunk.js.LICENSE.txt": "/react-github-corners/static/js/68.57f2fb8f.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/react-github-corners/static/media/logo.49f98c8e.svg"
+    "static/media/logo.svg": "/react-github-corners/static/media/logo.49f98c8e.svg",
+    "workbox-8a532145.js": "/react-github-corners/workbox-8a532145.js",
+    "workbox-8a532145.js.map": "/react-github-corners/workbox-8a532145.js.map"
   },
   "entrypoints": [
     "static/js/runtime-main.bbe576a8.js",
