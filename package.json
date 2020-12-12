@@ -40,7 +40,7 @@
     "@uiw/react-markdown-preview": "1.0.9",
     "@uiw/react-shields": "1.1.0",
     "@uiw/reset.css": "1.0.4",
-    "@kkt/loader-raw": "5.10.3",
+    "@kkt/loader-raw": "5.11.1",
     "kkt": "5.10.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
