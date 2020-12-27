@@ -5,7 +5,7 @@ import './App.css';
 import GitHubCorners, { GitHubCornersProps } from '../';
 import MDStr from '../README.md';
 
-export default () => {
+const APP = () => {
   const [size, setSize] = useState(80);
   const [bgColor, setBgColor] = useState('#151513');
   const [color, setColor] = useState('#fff');
@@ -63,3 +63,5 @@ export default () => {
     </div>
   );
 }
+
+export default APP;
