@@ -1,0 +1,2 @@
+(this["webpackJsonp@uiw/react-github-corners"]=this["webpackJsonp@uiw/react-github-corners"]||[]).push([[398],{429:function(t,e){Prism.languages["t4-vb"]=Prism.languages["t4-templating"].createT4("vbnet")}}]);
+//# sourceMappingURL=398.427b7afd.chunk.js.map
