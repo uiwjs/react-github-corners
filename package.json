@@ -7,8 +7,8 @@
   "scripts": {
     "prepare": "npm run build",
     "released": "npm run build && npm run doc",
-    "doc": "ENTRYDIR=website kkt build",
-    "start": "ENTRYDIR=website kkt start",
+    "doc": "kkt build --app-src ./website",
+    "start": "kkt start --app-src ./website",
     "watch": "npm run ts:watch & npm run types:watch",
     "build": "npm run ts:build && npm run types:esm && npm run types:cjs",
     "types:build": "tsbb types --sourceRoot src --target ESNEXT",
@@ -40,14 +40,18 @@
     "@uiw/react-markdown-preview": "1.0.9",
     "@uiw/react-shields": "1.1.0",
     "@uiw/reset.css": "1.0.4",
-    "@kkt/loader-raw": "5.10.3",
+    "@kkt/raw-modules": "6.0.11",
+    "@kkt/scope-plugin-options": "6.0.11",
     "kkt": "5.10.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "tsbb": "1.7.7"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
