@@ -41,7 +41,7 @@
     "@uiw/react-shields": "1.1.0",
     "@uiw/reset.css": "1.0.4",
     "@kkt/raw-modules": "6.0.11",
-    "@kkt/scope-plugin-options": "6.0.11",
+    "@kkt/scope-plugin-options": "6.9.0",
     "kkt": "6.0.11",
     "react": "16.13.1",
     "react-dom": "16.13.1",
