@@ -1,2 +1,0 @@
-(this["webpackJsonp@uiw/react-github-corners"]=this["webpackJsonp@uiw/react-github-corners"]||[]).push([[24],{55:function(t,e){Prism.languages.arff={comment:/%.*/,string:{pattern:/(["'])(?:\\.|(?!\1)[^\\\r\n])*\1/,greedy:!0},keyword:/@(?:attribute|data|end|relation)\b/i,number:/\b\d+(?:\.\d+)?\b/,punctuation:/[{},]/}}}]);
-//# sourceMappingURL=24.d80484eb.chunk.js.map
