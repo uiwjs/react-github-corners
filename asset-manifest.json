@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-github-corners/static/css/main.2d0d2713.chunk.css",
+    "main.css": "/react-github-corners/static/css/main.5856ef2b.chunk.css",
     "main.js": "/react-github-corners/static/js/main.d28177b8.chunk.js",
     "main.js.map": "/react-github-corners/static/js/main.d28177b8.chunk.js.map",
     "runtime-main.js": "/react-github-corners/static/js/runtime-main.e3eb5d8d.js",
@@ -10,7 +10,7 @@
     "static/js/2.f3e5f88f.chunk.js.map": "/react-github-corners/static/js/2.f3e5f88f.chunk.js.map",
     "index.html": "/react-github-corners/index.html",
     "static/css/2.2d5b5273.chunk.css.map": "/react-github-corners/static/css/2.2d5b5273.chunk.css.map",
-    "static/css/main.2d0d2713.chunk.css.map": "/react-github-corners/static/css/main.2d0d2713.chunk.css.map",
+    "static/css/main.5856ef2b.chunk.css.map": "/react-github-corners/static/css/main.5856ef2b.chunk.css.map",
     "static/js/2.f3e5f88f.chunk.js.LICENSE.txt": "/react-github-corners/static/js/2.f3e5f88f.chunk.js.LICENSE.txt",
     "static/media/logo.3931a054.svg": "/react-github-corners/static/media/logo.3931a054.svg"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.e3eb5d8d.js",
     "static/css/2.2d5b5273.chunk.css",
     "static/js/2.f3e5f88f.chunk.js",
-    "static/css/main.2d0d2713.chunk.css",
+    "static/css/main.5856ef2b.chunk.css",
     "static/js/main.d28177b8.chunk.js"
   ]
 }
