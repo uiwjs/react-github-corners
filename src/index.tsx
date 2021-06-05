@@ -38,7 +38,7 @@ export interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAncho
   zIndex?: number;
 }
 
-export default (props: GitHubCornersProps = {}) => {
+export default function githubCorners(props: GitHubCornersProps = {}) {
   const { size = 80, fixed = false, zIndex, className, bgColor = '#151513', color = '#fff', position = 'right', ...otherProps } = props;
   const styl = position === 'left' ? { left: 0, transform: 'scale(-1, 1)' } : { right: 0 };
   return (
