@@ -27,6 +27,8 @@ export interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAncho
    * Default: `right`
    */
   position?: 'left' | 'right';
+  /** Is it displayed at the bottom? */
+  bottom?: boolean,
   /**
    * It is positioned relative to the initial containing block established.
    * Default: `false`
@@ -39,8 +41,13 @@ export interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAncho
 }
 
 export default function githubCorners(props: GitHubCornersProps = {}) {
-  const { size = 80, fixed = false, zIndex, className, bgColor = '#151513', color = '#fff', position = 'right', ...otherProps } = props;
-  const styl = position === 'left' ? { left: 0, transform: 'scale(-1, 1)' } : { right: 0 };
+  const { size = 80, fixed = false, bottom, zIndex, className, bgColor = '#151513', color = '#fff', position = 'right', ...otherProps } = props;
+  const styl: React.CSSProperties = position === 'left' ? { left: 0, transform: 'scale(-1, 1)' } : { right: 0 };
+  if (bottom) {
+    styl.bottom = 0;
+    styl.top = 'initial';
+    styl.transform = position === 'left' ? 'scale(-1, -1)' : 'scale(1, -1)';
+  }
   return (
     <a href={props.href} aria-label="View source on GitHub" {...otherProps} className={'github-corner ' + (className || '')} >
       <svg

@@ -10,6 +10,7 @@ const APP = () => {
   const [bgColor, setBgColor] = useState('#151513');
   const [color, setColor] = useState('#fff');
   const [position, setPosition] = useState<GitHubCornersProps['position']>('right');
+  const [bottom, setBottom] = useState<boolean>(false);
   return (
     <div className="App">
       <GitHubCorners
@@ -17,6 +18,7 @@ const APP = () => {
         bgColor={bgColor}
         color={color}
         position={position}
+        bottom={bottom}
         fixed
         zIndex={99}
         target="__blank"
@@ -32,6 +34,7 @@ const APP = () => {
           <button onClick={() => {setSize(80)}}>Set Size 80px</button>
           <button onClick={() => {setPosition('left')}}>Left</button>
           <button onClick={() => {setPosition('right')}}>Right</button>
+          <button onClick={() => setBottom(!bottom)}>{bottom ? 'Top' : 'Bottom'}</button>
         </div>
         <div className="App-button">
           <button onClick={() => {setBgColor('#F95C2B')}} style={{ backgroundColor: '#F95C2B' }}>Orange #F95C2B</button>
