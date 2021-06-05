@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - master
-    tags:
-      - v1.*
 jobs:
   build-deploy:
     runs-on: ubuntu-18.04
@@ -16,7 +14,6 @@ jobs:
 
     - run: npm install
     - run: npm run build
-    - run: npm run doc
 
     - name: Create Tag
       id: create_tag
@@ -34,12 +31,6 @@ jobs:
         filter-author: (jaywcjlove|小弟调调™|dependabot\[bot\]|Renovate Bot)
         filter: '[R|r]elease[d]\s+[v|V]\d(\.\d+){0,2}'
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
-
     - name: Create Release
       uses: ncipollo/release-action@v1
       if: steps.create_tag.outputs.successful
@@ -55,3 +46,10 @@ jobs:
 
           ${{ steps.changelog.outputs.compareurl }}
           ${{ steps.changelog.outputs.changelog }}
+
+    - run: npm run doc
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
