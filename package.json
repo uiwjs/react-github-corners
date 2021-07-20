@@ -44,7 +44,7 @@
     "@uiw/react-shields": "1.1.1",
     "@uiw/reset.css": "1.0.4",
     "@kkt/raw-modules": "6.9.0",
-    "@kkt/scope-plugin-options": "6.9.0",
+    "@kkt/scope-plugin-options": "6.11.0",
     "compile-less-cli": "1.8.0",
     "kkt": "6.9.0",
     "react": "17.0.2",
