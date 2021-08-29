@@ -6,14 +6,13 @@
   "module": "esm/index.js",
   "scripts": {
     "prepare": "npm run build",
-    "released": "npm run build && npm run doc",
     "doc": "kkt build --app-src ./website",
     "start": "kkt start --app-src ./website",
     "css:build": "compile-less -d src -o esm",
     "css:watch": "compile-less -d src -o esm --watch",
     "css:build:dist": "compile-less -d src --combine w-github-corners.css --rm-global",
     "watch": "tsbb watch",
-    "build": "tsbb build"
+    "build": "tsbb build && npm run css:build && npm run css:build:dist"
   },
   "homepage": "https://uiwjs.github.io/react-github-corners",
   "repository": {
