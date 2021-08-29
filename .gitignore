@@ -1,13 +1,16 @@
-node_modules
-lib
+cjs
+esm
 build
 npm-debug.log*
 package-lock.json
+node_modules
+
 .DS_Store
 .cache
 .rdoc-dist
 .vscode
 
+*.log
 *.bak
 *.tem
 *.temp
