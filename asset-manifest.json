@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-github-corners/static/css/main.3231f3df.chunk.css",
-    "main.js": "/react-github-corners/static/js/main.77ea1904.chunk.js",
-    "main.js.map": "/react-github-corners/static/js/main.77ea1904.chunk.js.map",
+    "main.css": "/react-github-corners/static/css/main.5b540456.chunk.css",
+    "main.js": "/react-github-corners/static/js/main.a89edf52.chunk.js",
+    "main.js.map": "/react-github-corners/static/js/main.a89edf52.chunk.js.map",
     "runtime-main.js": "/react-github-corners/static/js/runtime-main.5733180b.js",
     "runtime-main.js.map": "/react-github-corners/static/js/runtime-main.5733180b.js.map",
     "static/css/2.bf4e8031.chunk.css": "/react-github-corners/static/css/2.bf4e8031.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.45f208e9.chunk.js.map": "/react-github-corners/static/js/2.45f208e9.chunk.js.map",
     "index.html": "/react-github-corners/index.html",
     "static/css/2.bf4e8031.chunk.css.map": "/react-github-corners/static/css/2.bf4e8031.chunk.css.map",
-    "static/css/main.3231f3df.chunk.css.map": "/react-github-corners/static/css/main.3231f3df.chunk.css.map",
+    "static/css/main.5b540456.chunk.css.map": "/react-github-corners/static/css/main.5b540456.chunk.css.map",
     "static/js/2.45f208e9.chunk.js.LICENSE.txt": "/react-github-corners/static/js/2.45f208e9.chunk.js.LICENSE.txt",
     "static/media/logo.3931a054.svg": "/react-github-corners/static/media/logo.3931a054.svg"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.5733180b.js",
     "static/css/2.bf4e8031.chunk.css",
     "static/js/2.45f208e9.chunk.js",
-    "static/css/main.3231f3df.chunk.css",
-    "static/js/main.77ea1904.chunk.js"
+    "static/css/main.5b540456.chunk.css",
+    "static/js/main.a89edf52.chunk.js"
   ]
 }
