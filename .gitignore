@@ -4,6 +4,7 @@ build
 npm-debug.log*
 package-lock.json
 node_modules
+w-github-corners.css
 
 .DS_Store
 .cache
