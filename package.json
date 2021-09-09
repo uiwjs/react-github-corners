@@ -10,7 +10,7 @@
     "start": "kkt start --app-src ./website",
     "css:build": "compile-less -d src -o esm",
     "css:watch": "compile-less -d src -o esm --watch",
-    "css:build:dist": "compile-less -d src --combine w-github-corners.css --rm-global",
+    "css:build:dist": "compile-less -d src --combine dist.css --rm-global",
     "watch": "tsbb watch",
     "build": "tsbb build && npm run css:build && npm run css:build:dist"
   },
@@ -32,18 +32,18 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@types/react": "17.0.19",
+    "@types/react": "17.0.20",
     "@types/react-dom": "17.0.9",
-    "@uiw/react-markdown-preview": "3.3.0",
-    "@uiw/react-shields": "1.1.1",
+    "@uiw/react-markdown-preview": "3.3.1",
+    "@uiw/react-shields": "1.1.2",
     "@uiw/reset.css": "1.0.5",
     "@kkt/raw-modules": "6.11.0",
     "@kkt/scope-plugin-options": "6.11.0",
-    "compile-less-cli": "1.8.1",
+    "compile-less-cli": "1.8.8",
     "kkt": "6.11.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "tsbb": "3.0.0"
+    "tsbb": "3.1.5"
   },
   "eslintConfig": {
     "extends": [
