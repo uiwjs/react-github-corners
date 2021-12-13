@@ -34,17 +34,17 @@
   "devDependencies": {
     "@kkt/raw-modules": "6.11.0",
     "@kkt/scope-plugin-options": "6.11.0",
-    "@types/react": "17.0.20",
-    "@types/react-dom": "17.0.9",
-    "@uiw/react-color-sketch": "^1.0.6",
-    "@uiw/react-markdown-preview": "3.3.1",
+    "@types/react": "17.0.37",
+    "@types/react-dom": "17.0.11",
+    "@uiw/react-color-sketch": "1.0.6",
+    "@uiw/react-markdown-preview": "3.4.5",
     "@uiw/react-shields": "1.1.2",
     "@uiw/reset.css": "1.0.5",
-    "compile-less-cli": "1.8.8",
+    "compile-less-cli": "1.8.9",
     "kkt": "6.11.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "tsbb": "3.1.5"
+    "tsbb": "3.5.2"
   },
   "eslintConfig": {
     "extends": [
