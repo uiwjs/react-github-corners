@@ -36,7 +36,7 @@
     "@kkt/scope-plugin-options": "6.11.0",
     "@types/react": "17.0.20",
     "@types/react-dom": "17.0.9",
-    "@uiw/react-color-sketch": "^1.0.6",
+    "@uiw/react-color-sketch": "1.0.6",
     "@uiw/react-markdown-preview": "3.3.1",
     "@uiw/react-shields": "1.1.2",
     "@uiw/reset.css": "1.0.5",
