@@ -11,13 +11,19 @@ body {
   padding-bottom: 68px;
 }
 
+.App .arrow {
+  position: absolute;
+  right: 18px;
+  top: 32px;
+}
+
 .App-logo {
   height: 20vmin;
 }
 
 .App-header {
   text-align: center;
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 230px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,6 +58,9 @@ body {
   margin-bottom: 10px;
 }
 
+.App-button button.select {
+  text-shadow: 0 1px hsl(0deg 0% 100% / 90%), 0 -1px hsl(0deg 0% 100% / 90%), 1px 0px hsl(0deg 0% 100% / 90%), -1px 0px hsl(0deg 0% 100% / 90%)
+}
 .App-button button {
   position: relative;
   display: inline-block;
