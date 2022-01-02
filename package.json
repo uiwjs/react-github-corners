@@ -40,7 +40,7 @@
     "@uiw/react-markdown-preview": "3.4.5",
     "@uiw/react-shields": "1.1.2",
     "@uiw/reset.css": "1.0.5",
-    "compile-less-cli": "1.8.9",
+    "compile-less-cli": "1.8.11",
     "kkt": "6.11.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
