@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/react-github-corners/static/css/main.e4f132af.chunk.css",
-    "main.js": "/react-github-corners/static/js/main.66e1e543.chunk.js",
-    "main.js.map": "/react-github-corners/static/js/main.66e1e543.chunk.js.map",
-    "runtime-main.js": "/react-github-corners/static/js/runtime-main.b528a2c1.js",
-    "runtime-main.js.map": "/react-github-corners/static/js/runtime-main.b528a2c1.js.map",
-    "static/css/2.221ce678.chunk.css": "/react-github-corners/static/css/2.221ce678.chunk.css",
-    "static/js/2.7fa8a210.chunk.js": "/react-github-corners/static/js/2.7fa8a210.chunk.js",
-    "static/js/2.7fa8a210.chunk.js.map": "/react-github-corners/static/js/2.7fa8a210.chunk.js.map",
+    "main.css": "/react-github-corners/static/css/main.a3aa092f.css",
+    "main.js": "/react-github-corners/static/js/main.f80c0989.js",
+    "refractor-prismjs-vendor.js": "/react-github-corners/static/js/refractor-prismjs-vendor.1ee25696.js",
+    "parse5-vendor.js": "/react-github-corners/static/js/parse5-vendor.9e89fbf8.js",
+    "react-vendor.js": "/react-github-corners/static/js/react-vendor.346bd179.js",
+    "static/media/logo.svg": "/react-github-corners/static/media/logo.3931a054f5ef8356122965d973d55570.svg",
     "index.html": "/react-github-corners/index.html",
-    "static/css/2.221ce678.chunk.css.map": "/react-github-corners/static/css/2.221ce678.chunk.css.map",
-    "static/css/main.e4f132af.chunk.css.map": "/react-github-corners/static/css/main.e4f132af.chunk.css.map",
-    "static/js/2.7fa8a210.chunk.js.LICENSE.txt": "/react-github-corners/static/js/2.7fa8a210.chunk.js.LICENSE.txt",
-    "static/media/logo.3931a054.svg": "/react-github-corners/static/media/logo.3931a054.svg"
+    "main.a3aa092f.css.map": "/react-github-corners/static/css/main.a3aa092f.css.map",
+    "main.f80c0989.js.map": "/react-github-corners/static/js/main.f80c0989.js.map",
+    "refractor-prismjs-vendor.1ee25696.js.map": "/react-github-corners/static/js/refractor-prismjs-vendor.1ee25696.js.map",
+    "parse5-vendor.9e89fbf8.js.map": "/react-github-corners/static/js/parse5-vendor.9e89fbf8.js.map",
+    "react-vendor.346bd179.js.map": "/react-github-corners/static/js/react-vendor.346bd179.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.b528a2c1.js",
-    "static/css/2.221ce678.chunk.css",
-    "static/js/2.7fa8a210.chunk.js",
-    "static/css/main.e4f132af.chunk.css",
-    "static/js/main.66e1e543.chunk.js"
+    "static/js/refractor-prismjs-vendor.1ee25696.js",
+    "static/js/parse5-vendor.9e89fbf8.js",
+    "static/js/react-vendor.346bd179.js",
+    "static/css/main.a3aa092f.css",
+    "static/js/main.f80c0989.js"
   ]
 }
