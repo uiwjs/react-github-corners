@@ -31,12 +31,6 @@ Skypack CDN:
 <script type="module" src="https://cdn.skypack.dev/@uiw/github-corners"></script>
 ```
 
-JSPM CDN:
-
-```html
-<script type="module" src="https://jspm.dev/@uiw/github-corners"></script>
-```
-
 ## Usage
 
 Import into your module script:
