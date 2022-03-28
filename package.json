@@ -44,6 +44,7 @@
     "@uiw/react-markdown-preview": "~4.0.5",
     "@uiw/react-shields": "~1.1.2",
     "@uiw/reset.css": "~1.0.6",
+    "@wcj/dark-mode": "~1.0.13",
     "compile-less-cli": "~1.8.11",
     "kkt": "~7.1.5",
     "react": "~17.0.2",

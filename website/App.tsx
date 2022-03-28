@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MarkdownPreview from '@uiw/react-markdown-preview';
 import { SelectColor } from './components/SelectColor';
+import '@wcj/dark-mode';
 import GitHubCorners, { GitHubCornersProps } from '../';
 import logo from './logo.svg';
 import './App.css';
@@ -14,6 +15,7 @@ const APP = () => {
   const [bottom, setBottom] = useState<boolean>(false);
   return (
     <div className="App">
+      <dark-mode light="Light" dark="Dark" style={{ position: 'fixed', top: 8, left: 10 }}></dark-mode>
       <GitHubCorners
         size={size}
         bgColor={bgColor}

@@ -7,7 +7,7 @@ body {
 }
 
 .App {
-  background-color: #282c34;
+  background-color: var(--color-theme-bg);
   padding-bottom: 68px;
 }
 
@@ -29,7 +29,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-header p {
@@ -93,7 +92,7 @@ body {
   text-align: left;
   max-width: 820px;
   overflow: auto;
-  background-color: #fff;
+  background-color: var(--color-theme-bg);
   padding: 16px;
   border-radius: 5px;
 }
