@@ -113,8 +113,8 @@ Your app is ready to be deployed!
 
 As always, thanks to our amazing contributors!
 
-<a href="https://github.com/jaywcjlove/github-action-contributors/graphs/contributors">
-  <img src="https://jaywcjlove.github.io/github-action-contributors/CONTRIBUTORS.svg" />
+<a href="https://github.com/uiwjs/react-github-corners/graphs/contributors">
+  <img src="https://uiwjs.github.io/react-github-corners/CONTRIBUTORS.svg" />
 </a>
 
 Made with [action-contributors](https://github.com/jaywcjlove/github-action-contributors).
