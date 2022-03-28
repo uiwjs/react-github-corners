@@ -18,6 +18,11 @@
     "esm",
     "src"
   ],
+  "keywords": [
+    "react",
+    "github-corners",
+    "react-github-corners"
+  ],
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
