@@ -1,0 +1,49 @@
+{
+  "name": "@uiw/react-github-corners",
+  "version": "1.5.4",
+  "description": "Add a Github corner to your project page, This GitHub corners for react component.",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "homepage": "https://uiwjs.github.io/react-github-corners",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiwjs/react-github-corners.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "files": [
+    "dist",
+    "dist.css",
+    "cjs",
+    "esm",
+    "src"
+  ],
+  "devDependencies": {
+    "@types/react": "~17.0.43",
+    "@types/react-dom": "~17.0.14",
+    "react": "~17.0.2",
+    "react-dom": "~17.0.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

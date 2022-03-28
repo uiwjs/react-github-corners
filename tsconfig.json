@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "jsx": "react",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,9 +15,8 @@
     "isolatedModules": true,
     "declaration": true,
     "baseUrl": ".",
-    "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true,
-    "noEmit": true
-  },
-  "include": ["website", ".kktrc.ts"]
+    "noEmit": true,
+    "types": ["jest", "node"]
+  }
 }

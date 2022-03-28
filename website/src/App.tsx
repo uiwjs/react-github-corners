@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import MarkdownPreview from '@uiw/react-markdown-preview';
 import { SelectColor } from './components/SelectColor';
 import '@wcj/dark-mode';
-import GitHubCorners, { GitHubCornersProps } from '../';
+import GitHubCorners, { GitHubCornersProps } from '@uiw/react-github-corners';
+import MDStr from '@uiw/react-github-corners/README.md';
 import logo from './logo.svg';
 import './App.css';
-import MDStr from '../README.md';
 
 const APP = () => {
   const [size, setSize] = useState(80);
