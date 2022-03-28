@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/react-github-corners/static/css/main.a3aa092f.css",
-    "main.js": "/react-github-corners/static/js/main.f80c0989.js",
-    "refractor-prismjs-vendor.js": "/react-github-corners/static/js/refractor-prismjs-vendor.1ee25696.js",
+    "main.css": "/react-github-corners/static/css/main.1b95ea17.css",
+    "main.js": "/react-github-corners/static/js/main.4c6e7b4a.js",
+    "refractor-prismjs-vendor.js": "/react-github-corners/static/js/refractor-prismjs-vendor.e14fc782.js",
+    "babel-vendor.js": "/react-github-corners/static/js/babel-vendor.7649c32d.js",
     "parse5-vendor.js": "/react-github-corners/static/js/parse5-vendor.9e89fbf8.js",
     "react-vendor.js": "/react-github-corners/static/js/react-vendor.346bd179.js",
     "static/media/logo.svg": "/react-github-corners/static/media/logo.3931a054f5ef8356122965d973d55570.svg",
     "index.html": "/react-github-corners/index.html",
-    "main.a3aa092f.css.map": "/react-github-corners/static/css/main.a3aa092f.css.map",
-    "main.f80c0989.js.map": "/react-github-corners/static/js/main.f80c0989.js.map",
-    "refractor-prismjs-vendor.1ee25696.js.map": "/react-github-corners/static/js/refractor-prismjs-vendor.1ee25696.js.map",
+    "main.1b95ea17.css.map": "/react-github-corners/static/css/main.1b95ea17.css.map",
+    "main.4c6e7b4a.js.map": "/react-github-corners/static/js/main.4c6e7b4a.js.map",
+    "refractor-prismjs-vendor.e14fc782.js.map": "/react-github-corners/static/js/refractor-prismjs-vendor.e14fc782.js.map",
+    "babel-vendor.7649c32d.js.map": "/react-github-corners/static/js/babel-vendor.7649c32d.js.map",
     "parse5-vendor.9e89fbf8.js.map": "/react-github-corners/static/js/parse5-vendor.9e89fbf8.js.map",
     "react-vendor.346bd179.js.map": "/react-github-corners/static/js/react-vendor.346bd179.js.map"
   },
   "entrypoints": [
-    "static/js/refractor-prismjs-vendor.1ee25696.js",
+    "static/js/refractor-prismjs-vendor.e14fc782.js",
+    "static/js/babel-vendor.7649c32d.js",
     "static/js/parse5-vendor.9e89fbf8.js",
     "static/js/react-vendor.346bd179.js",
-    "static/css/main.a3aa092f.css",
-    "static/js/main.f80c0989.js"
+    "static/css/main.1b95ea17.css",
+    "static/js/main.4c6e7b4a.js"
   ]
 }
