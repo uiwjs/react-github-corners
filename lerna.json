@@ -1,5 +1,5 @@
 {
-  "packages": ["react", "website"],
+  "packages": ["react", "web-component", "website"],
   "bootstrap": {
     "yarnClientArgs": ["--no-yarn-lock", "--no-package-lock"],
     "forceLocal": true

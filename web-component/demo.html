@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>github-corners</title>
+  <script type="module" src="./lib/index.js"></script>
+</head>
+<body>
+  <github-corners aria-label="View source on GitHub" fill="red" color="blue" target="__blank" href="https://github.com/uiwjs/react-github-corners"></github-corners>
+  <label>
+    <input type="range" value="160" min="50" max="220" onChange="handleChange(this)" />
+  </label>
+  <script>
+    const corner = document.querySelector('github-corners')
+    corner.setAttribute('width', 160);
+    corner.setAttribute('height', 160);
+    function handleChange(target) {
+      corner.setAttribute('width', target.value);
+      corner.setAttribute('height', target.value);
+    }
+  </script>
+</body>
+</html>

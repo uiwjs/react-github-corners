@@ -1,0 +1,20 @@
+{
+  "name": "@uiw/github-corners",
+  "version": "1.5.4",
+  "description": "Add a Github corner to your project page, This GitHub corners for react component.",
+  "type": "module",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "homepage": "https://uiwjs.github.io/react-github-corners",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiwjs/react-github-corners.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "src"
+  ]
+}

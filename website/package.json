@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@uiw/react-color-sketch": "~1.0.10",
-    "@uiw/react-github-corners": "1.5.4",
+    "@uiw/react-github-corners": "~1.5.4",
     "@uiw/react-markdown-preview": "~4.0.5",
     "@uiw/react-shields": "~1.1.2",
     "@uiw/reset.css": "~1.0.6",

@@ -2,22 +2,48 @@ react-github-corners
 ===
 <!--dividing-->
 
-[![](https://img.shields.io/github/issues/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/issues)
-[![](https://img.shields.io/github/forks/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/network)
-[![](https://img.shields.io/github/stars/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/stargazers)
-[![](https://img.shields.io/github/v/release/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/releases)
-[![](https://img.shields.io/npm/v/@uiw/react-github-corners.svg)](https://www.npmjs.com/package/@uiw/react-github-corners)
-[![](https://jaywcjlove.github.io/sb/ico/gitee.svg)](https://gitee.com/uiw/react-github-corners)
-
+[![CI](https://github.com/uiwjs/react-github-corners/actions/workflows/ci.yml/badge.svg)](https://github.com/uiwjs/react-github-corners/actions/workflows/ci.yml)
+[![jsDelivr CDN](https://data.jsdelivr.com/v1/package/npm/@uiw/react-github-corners/badge?style=rounded)](https://www.jsdelivr.com/package/npm/@uiw/react-github-corners)
+[![NPM Downloads](https://img.shields.io/npm/dm/@uiw/react-github-corners.svg?style=flat)](https://www.npmjs.com/package/@uiw/react-github-corners)
+[![npm version](https://img.shields.io/npm/v/@uiw/react-github-corners.svg)](https://www.npmjs.com/package/@uiw/react-github-corners)
+[![Open in unpkg](https://img.shields.io/badge/Open%20in-unpkg-blue)](https://uiwjs.github.io/npm-unpkg/#/pkg/@uiw/react-github-corners/file/README.md)
 
 Add a Github corner to your project page, This [GitHub corners](https://uiwjs.github.io/react-github-corners) for [**@react**](https://github.com/facebook/react) component. Visit [https://uiwjs.github.io/react-github-corners](https://uiwjs.github.io/react-github-corners) to preview the example effects.
 
 Preview Example: [Github](https://uiwjs.github.io/react-github-corners) | [Gitee](https://uiw.gitee.io/react-github-corners/)
 
+## Installation
+
 ```bash
 npm install --save @uiw/react-github-corners
 # Via Yarn:
 yarn add @uiw/react-github-corners
+```
+
+Or use Web Components
+
+```bash
+npm install --save @uiw/github-corners
+```
+
+Or load the ES module directly through unpkg
+
+unpkg.com CDN:
+
+```html
+<script type="module" src="https://unpkg.com/@uiw/github-corners?module"></script>
+```
+
+Skypack CDN:
+
+```html
+<script type="module" src="https://cdn.skypack.dev/@uiw/github-corners"></script>
+```
+
+JSPM CDN:
+
+```html
+<script type="module" src="https://jspm.dev/@uiw/github-corners"></script>
 ```
 
 ## Usage
@@ -35,7 +61,30 @@ function Demo() {
 }
 ```
 
-## Props
+Use it in your HTML:
+
+```html
+<github-corners></github-corners>
+```
+
+Learn about web components [here](https://developer.mozilla.org/en-US/docs/Web/Web_Components).
+
+[![npm version](https://img.shields.io/npm/v/@uiw/github-corners.svg?label=github-corners)](https://www.npmjs.com/package/@uiw/github-corners)
+
+Using web components in React:
+
+```jsx
+import React from 'react';
+import '@uiw/github-corners';
+
+function Demo() {
+  return (
+    <github-corners></github-corners>
+  );
+}
+```
+
+## React Props
 
 ```typescript
 interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -91,9 +140,9 @@ Runs the project in development mode.
 
 ```bash
 # Step 1, run first, listen to the component compile and output the .js file
-npm run build
+npm run hoist
 # Step 2, listen for compilation output type .d.ts file
-npm run watch
+npm run watch 
 npm run css:watch
 # Step 3, development mode, listen to compile preview website instance
 npm run start
@@ -102,7 +151,7 @@ npm run start
 Builds the app for production to the build folder.
 
 ```bash
-npm run build
+npm run build:all
 npm run doc
 ```
 

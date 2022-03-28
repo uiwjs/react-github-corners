@@ -25,6 +25,7 @@ const APP = () => {
         fixed
         zIndex={99}
         target="__blank"
+        style={{ color: 'red' }}
         href="https://github.com/uiwjs/react-github-corners"
       />
       <svg className="arrow" viewBox="0 0 1024 1024" width="160" height="160">
@@ -39,10 +40,10 @@ const APP = () => {
         <div className="App-button">
           <button onClick={() => {setSize(120)}}>Set Size 120px</button>
           <button onClick={() => {setSize(80)}}>Set Size 80px</button>
-          <button onClick={() => {setPosition('left')}}>Left</button>
-          <button onClick={() => {setPosition('right')}}>Right</button>
+          <button onClick={() => {setPosition(position === 'left' ? 'right' : 'left')}}>{position === 'right' ? 'Right' : 'Left'}</button>
           <button onClick={() => setBottom(!bottom)}>{bottom ? 'Top' : 'Bottom'}</button>
         </div>
+        <input type="range" value={size} min="50" style={{ minWidth: 320 }} max="220" onChange={(evn) => setSize(Number(evn.target.value))}/>
         <div className="App-button">
           <button onClick={() => {setBgColor('#F95C2B')}} style={{ backgroundColor: '#F95C2B' }}>Orange #F95C2B</button>
           <button onClick={() => {setBgColor('#28a745')}} style={{ backgroundColor: '#28a745' }}>Green #28a745</button>

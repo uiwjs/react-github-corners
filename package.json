@@ -2,22 +2,21 @@
   "private": true,
   "scripts": {
     "hoist": "lerna bootstrap --hoist",
+    "web:demo": "lerna exec --scope @uiw/github-corners -- npx sgo --fallback demo.html",
     "doc": "lerna exec --scope @website/github-corners -- kkt build",
     "start": "lerna exec --scope @website/github-corners -- kkt start",
     "build": "lerna exec --scope @uiw/react-github-corners -- tsbb build",
     "watch": "lerna exec --scope @uiw/react-github-corners -- tsbb watch",
+    "build:wc": "lerna exec --scope @uiw/github-corners -- tsbb build --disable-babel",
+    "watch:wc": "lerna exec --scope @uiw/github-corners -- tsbb watch --disable-babel",
     "bundle": "lerna exec --scope @uiw/react-github-corners -- ncc build src/index.tsx --target web --filename github-corners",
     "bundle:min": "lerna exec --scope @uiw/react-github-corners -- ncc build src/index.tsx --target web --filename github-corners --minify",
-    "css:build": "lerna exec --scope @uiw/react-github-corners -- compile-less -d src -o esm",
-    "css:watch": "lerna exec --scope @uiw/react-github-corners -- compile-less -d src -o esm --watch",
-    "css:build:dist": "lerna exec --scope @uiw/react-github-corners -- compile-less -d src --combine dist.css --rm-global",
-    "build:all": "npm run build && npm run css:build && npm run css:build:dist && npm run bundle && npm run bundle:min",
+    "all": "npm run build && npm run bundle && npm run bundle:min && npm run build:wc",
     "version": "lerna version --exact --force-publish --no-push --no-git-tag-version",
     "clean": "lerna clean --yes"
   },
   "devDependencies": {
     "@kkt/ncc": "~1.0.13",
-    "compile-less-cli": "~1.8.11",
     "lerna": "~4.0.0",
     "tsbb": "~3.7.2"
   }
