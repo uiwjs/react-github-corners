@@ -109,6 +109,16 @@ npm run doc
 The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
+## Contributors
+
+As always, thanks to our amazing contributors!
+
+<a href="https://github.com/jaywcjlove/github-action-contributors/graphs/contributors">
+  <img src="https://jaywcjlove.github.io/github-action-contributors/CONTRIBUTORS.svg" />
+</a>
+
+Made with [action-contributors](https://github.com/jaywcjlove/github-action-contributors).
+
 ## License
 
 Licensed under the MIT License.
