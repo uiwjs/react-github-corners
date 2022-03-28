@@ -17,6 +17,13 @@ jobs:
     - run: npm run doc
     - run: npm run bundle
     - run: npm run bundle:min
+    - run: npm run doc
+    - name: Generate Contributors Images
+      uses: jaywcjlove/github-action-contributors@main
+      with:
+        filter-author: (renovate\[bot\]|renovate-bot|dependabot\[bot\])
+        output: build/CONTRIBUTORS.svg
+        avatarSize: 42
 
     - name: Create Tag
       id: create_tag
@@ -26,9 +33,8 @@ jobs:
 
     - name: get tag version
       id: tag_version
-      uses: jaywcjlove/changelog-generator@v1.5.0
+      uses: jaywcjlove/changelog-generator@v1.5.3
 
-    - run: npm run doc
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
@@ -40,7 +46,7 @@ jobs:
 
     - name: Generate Changelog
       id: changelog
-      uses: jaywcjlove/changelog-generator@v1.5.0
+      uses: jaywcjlove/changelog-generator@v1.5.3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         head-ref: ${{steps.create_tag.outputs.version}}
