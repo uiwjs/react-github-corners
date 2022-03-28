@@ -53,6 +53,19 @@ Use it in your HTML:
 
 Learn about web components [here](https://developer.mozilla.org/en-US/docs/Web/Web_Components).
 
+Using web components in React:
+
+```jsx
+import React from 'react';
+import '@uiw/github-corners';
+
+function Demo() {
+  return (
+    <github-corners></github-corners>
+  );
+}
+```
+
 ## Contributors
 
 As always, thanks to our amazing contributors!
