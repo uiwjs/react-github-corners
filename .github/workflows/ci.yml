@@ -69,12 +69,16 @@ jobs:
           
           Documentation ${{ steps.changelog.outputs.tag }}: https://raw.githack.com/uiwjs/react-github-corners/${{ steps.changelog.outputs.gh-pages-short-hash }}/index.html  
           Comparing Changes: ${{ steps.changelog.outputs.compareurl }} 
+
+          ${{ steps.changelog.outputs.changelog }}
           
           ```bash
           npm i @uiw/react-github-corners@${{steps.create_tag.outputs.versionNumber}}
           ```
-
-          ${{ steps.changelog.outputs.changelog }}
+          
+          ```bash
+          npm i @uiw/github-corners@${{steps.create_tag.outputs.versionNumber}}
+          ```
 
     - name: 📦 @uiw/react-github-corners publish to NPM
       uses: JS-DevTools/npm-publish@v1
