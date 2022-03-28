@@ -15,7 +15,7 @@ const APP = () => {
   const [bottom, setBottom] = useState<boolean>(false);
   return (
     <div className="App">
-      <dark-mode light="Light" dark="Dark" style={{ position: 'fixed', top: 8, left: 10 }}></dark-mode>
+      <dark-mode permanent light="Light" dark="Dark" style={{ position: 'fixed', top: 8, left: 10 }}></dark-mode>
       <GitHubCorners
         size={size}
         bgColor={bgColor}
