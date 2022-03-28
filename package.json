@@ -8,6 +8,8 @@
     "prepare": "npm run build",
     "doc": "kkt build --app-src ./website",
     "start": "kkt start --app-src ./website",
+    "bundle": "ncc build src/index.tsx --target web --filename github-corners",
+    "bundle:min": "ncc build src/index.tsx --target web --filename github-corners --minify",
     "css:build": "compile-less -d src -o esm",
     "css:watch": "compile-less -d src -o esm --watch",
     "css:build:dist": "compile-less -d src --combine dist.css --rm-global",
@@ -26,25 +28,27 @@
     "react-dom": ">=16.8.0"
   },
   "files": [
+    "dist",
     "dist.css",
     "cjs",
     "esm",
     "src"
   ],
   "devDependencies": {
-    "@kkt/raw-modules": "7.0.5",
-    "@kkt/scope-plugin-options": "7.0.5",
-    "@types/react": "17.0.38",
-    "@types/react-dom": "17.0.11",
-    "@uiw/react-color-sketch": "1.0.7",
-    "@uiw/react-markdown-preview": "3.4.7",
-    "@uiw/react-shields": "1.1.2",
-    "@uiw/reset.css": "1.0.5",
-    "compile-less-cli": "1.8.11",
-    "kkt": "7.0.5",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "tsbb": "3.5.4"
+    "@kkt/ncc": "~1.0.13",
+    "@kkt/raw-modules": "~7.1.1",
+    "@kkt/scope-plugin-options": "~7.1.1",
+    "@types/react": "~17.0.43",
+    "@types/react-dom": "~17.0.14",
+    "@uiw/react-color-sketch": "~1.0.10",
+    "@uiw/react-markdown-preview": "~4.0.5",
+    "@uiw/react-shields": "~1.1.2",
+    "@uiw/reset.css": "~1.0.6",
+    "compile-less-cli": "~1.8.11",
+    "kkt": "~7.1.5",
+    "react": "~17.0.2",
+    "react-dom": "~17.0.2",
+    "tsbb": "~3.7.2"
   },
   "eslintConfig": {
     "extends": [

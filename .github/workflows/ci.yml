@@ -15,17 +15,32 @@ jobs:
     - run: npm install
     - run: npm run build
     - run: npm run doc
+    - run: npm run bundle
+    - run: npm run bundle:min
 
     - name: Create Tag
       id: create_tag
-      uses: jaywcjlove/create-tag-action@v1.2.0
+      uses: jaywcjlove/create-tag-action@v1.3.6
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
         package-path: ./package.json
+
+    - name: get tag version
+      id: tag_version
+      uses: jaywcjlove/changelog-generator@v1.5.0
+
+    - run: npm run doc
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: ${{steps.tag_version.outputs.tag}} ${{ github.event.head_commit.message }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
 
     - name: Generate Changelog
       id: changelog
-      uses: jaywcjlove/changelog-generator@v1.4.3
+      uses: jaywcjlove/changelog-generator@v1.5.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         head-ref: ${{steps.create_tag.outputs.version}}
@@ -42,21 +57,18 @@ jobs:
         body: |
           [![](https://img.shields.io/badge/Open%20in-unpkg-blue)](https://uiwjs.github.io/npm-unpkg/#/pkg/@uiw/react-github-corners@${{steps.create_tag.outputs.versionNumber}}/file/README.md) [![](https://img.shields.io/github/issues/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/releases) [![](https://img.shields.io/github/forks/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/network) [![](https://img.shields.io/github/stars/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/stargazers) [![](https://img.shields.io/github/release/uiwjs/react-github-corners.svg)](https://github.com/uiwjs/react-github-corners/releases) [![npm bundle size](https://img.shields.io/bundlephobia/minzip/@uiw/react-github-corners)](https://bundlephobia.com/result?p=@uiw/react-github-corners@${{steps.create_tag.outputs.versionNumber}})
           
+          Documentation ${{ steps.changelog.outputs.tag }}: https://raw.githack.com/uiwjs/react-github-corners/${{ steps.changelog.outputs.gh-pages-short-hash }}/index.html  
+          Comparing Changes: ${{ steps.changelog.outputs.compareurl }} 
+          
           ```bash
           npm i @uiw/react-github-corners@${{steps.create_tag.outputs.versionNumber}}
           ```
 
-          ${{ steps.changelog.outputs.compareurl }}
-
           ${{ steps.changelog.outputs.changelog }}
 
-    - run: npm run doc
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+    - name: 📦 @uiw/react-github-corners publish to NPM
+      uses: JS-DevTools/npm-publish@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
-
-    - run: npm install @jsdevtools/npm-publish -g
-    - run: npm-publish --token="${{ secrets.NPM_TOKEN }}" ./package.json
+        token: ${{ secrets.NPM_TOKEN }}
+        package: ./package.json
     

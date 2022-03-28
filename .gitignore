@@ -1,6 +1,7 @@
 cjs
 esm
 build
+dist
 npm-debug.log*
 package-lock.json
 node_modules
