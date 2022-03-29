@@ -55,6 +55,7 @@ export class GithubCorners extends HTMLElement {
   color?: string;
   fill?: string;
   position?: string;
+  target?: string;
   top?: string;
   left?: string;
   right?: string = '0';
@@ -62,7 +63,7 @@ export class GithubCorners extends HTMLElement {
   transform?: string;
   warpper?: HTMLElement;
   static get observedAttributes(): string[] {
-    return ['z-index', 'height', 'width', 'href', 'color', 'fill', 'position', 'top', 'left', 'right', 'bottom', 'transform'];
+    return ['z-index', 'target', 'height', 'width', 'href', 'color', 'fill', 'position', 'top', 'left', 'right', 'bottom', 'transform'];
   }
   constructor() {
     super();
@@ -73,18 +74,6 @@ export class GithubCorners extends HTMLElement {
     shadow.appendChild(this.ownerDocument.importNode(TEMPLATE.content, true));
     this.warpper = shadow.getElementById('warpper');
 
-    // const svg = warpper.firstElementChild as SVGAElement;
-    // console.log('>>>href', this.getAttributeNames())
-    // console.log('>>>hre222f', warpper, warpper.querySelector('a'))
-    // ;[...this.getAttributeNames(), 'right'].forEach((name) => {
-    //   if (/(z-index|height|width|color|fill|position|top|left|right|bottom|transform)/.test(name.toLocaleLowerCase())) {
-    //     svg.style[name as any] = this.getAttribute(name) || this[name as keyof GithubCorners] as any;
-    //     console.log('~~~', name, this['left'], this.getAttribute(name))
-    //   } else {
-    //     console.log('name::', name,  this.getAttribute(name))
-    //     warpper.setAttribute(name, this.getAttribute(name));
-    //   }
-    // });
     this.update();
   }
   update() {
@@ -96,6 +85,9 @@ export class GithubCorners extends HTMLElement {
         this.warpper.setAttribute(name, this.getAttribute(name) || this[name as keyof GithubCorners] as any);
       }
     });
+  }
+  connectedCallback() {
+    this.update()
   }
   attributeChangedCallback(name: string, oldValue: string, newValue: string) {
     this.update()
