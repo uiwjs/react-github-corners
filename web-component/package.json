@@ -1,6 +1,6 @@
 {
   "name": "@uiw/github-corners",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "description": "Add a Github corner to your project page, This GitHub corners for web component.",
   "type": "module",
   "main": "lib/index.js",
