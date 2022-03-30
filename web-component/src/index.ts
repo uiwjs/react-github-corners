@@ -76,13 +76,14 @@ export class GithubCorners extends HTMLElement {
 
     this.update();
   }
-  update() {
+  private update() {
     const svg = this.warpper.querySelector('svg')
     ;[...this.getAttributeNames(), 'right'].forEach((name) => {
+      const value = this.getAttribute(name) || this[name as keyof GithubCorners] as any || '';
       if (/(z-index|height|width|color|fill|position|top|left|right|bottom|transform)/.test(name.toLocaleLowerCase())) {
-        svg.style[name as any] = this.getAttribute(name) || this[name as keyof GithubCorners] as any;
+        svg.style[name as any] = value;
       } else {
-        this.warpper.setAttribute(name, this.getAttribute(name) || this[name as keyof GithubCorners] as any);
+        this.warpper.setAttribute(name, value);
       }
     });
   }
