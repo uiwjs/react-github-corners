@@ -42,7 +42,7 @@ import { GithubCorners } from "@uiw/github-corners";
 Use it in your HTML:
 
 ```html
-<github-corners></github-corners>
+<github-corners target="__blank" position="fixed" href="https://github.com/uiwjs/react-github-corners"></github-corners>
 ```
 
 Learn about web components [here](https://developer.mozilla.org/en-US/docs/Web/Web_Components).
@@ -55,7 +55,7 @@ import '@uiw/github-corners';
 
 function Demo() {
   return (
-    <github-corners></github-corners>
+    <github-corners target="__blank" position="fixed" href="https://github.com/uiwjs/react-github-corners"></github-corners>
   );
 }
 ```
