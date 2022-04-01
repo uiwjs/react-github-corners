@@ -69,29 +69,30 @@ export class GithubCorners extends HTMLElement {
   }
   constructor() {
     super();
-    this.initDom();
-  }
-  private initDom() {
     this.shadow = this.attachShadow({ mode: 'open' });
     this.shadow.appendChild(this.ownerDocument.importNode(TEMPLATE.content, true));
-    this.update();
+    this.update()
+  }
+  private setAttr(name: string, value: string) {
+    const svg = this.shadow.querySelector('svg');
+    if (/(color|fill)/.test(name.toLocaleLowerCase())) {
+      (svg.firstElementChild as HTMLAnchorElement).style[name as any] = value;
+    } else if (/(z-index|height|width|position|top|left|right|bottom|transform)/.test(name.toLocaleLowerCase())) {
+      svg.style[name as any] = value;
+    } else {
+      svg.setAttribute(name, value);
+    }
   }
   private update() {
-    const svg = this.shadow.querySelector('svg')
     ;[...this.getAttributeNames(), 'right'].forEach((name) => {
       const value = this.getAttribute(name) || this[name as keyof GithubCorners] as any || '';
-      if (/(z-index|height|width|color|fill|position|top|left|right|bottom|transform)/.test(name.toLocaleLowerCase())) {
-        svg.style[name as any] = value;
-      } else {
-        svg.setAttribute(name, value);
-      }
+      this.setAttr(name, value);
     });
   }
-  connectedCallback() {
-    this.update()
-  }
   attributeChangedCallback(name: string, oldValue: string, newValue: string) {
-    this.update()
+    if (oldValue !== newValue) {
+      this.setAttr(name, newValue);
+    }
   }
 }
 

@@ -58,6 +58,7 @@ body {
 }
 
 .App-button button.select {
+  color: #333;
   text-shadow: 0 1px hsl(0deg 0% 100% / 90%), 0 -1px hsl(0deg 0% 100% / 90%), 1px 0px hsl(0deg 0% 100% / 90%), -1px 0px hsl(0deg 0% 100% / 90%)
 }
 .App-button button {

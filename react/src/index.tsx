@@ -51,6 +51,18 @@ export default function githubCorners(props: GitHubCornersProps) {
     styl.top = 0;
   }
   return (
-    <github-corners target="__blank" width={size} height={size} href={props.href} position={fixed ? 'fixed' : 'absolute'} z-index={zIndex} style={style} fill={bgColor} color={color} {...styl} {...otherProps}></github-corners>
+    <github-corners
+      target="__blank"
+      width={size}
+      height={size}
+      href={props.href}
+      position={fixed ? 'fixed' : 'absolute'}
+      z-index={zIndex}
+      style={style}
+      fill={bgColor}
+      color={color}
+      {...styl}
+      {...otherProps}
+    />
   );
 }
