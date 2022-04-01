@@ -8,7 +8,7 @@
   <script type="module" src="./lib/index.js"></script>
 </head>
 <body>
-  <github-corners aria-label="View source on GitHub" fill="red" color="blue" target="__blank" href="https://github.com/uiwjs/react-github-corners"></github-corners>
+  <github-corners position="fixed" aria-label="View source on GitHub" fill="red" color="blue" target="__blank" href="https://github.com/uiwjs/react-github-corners"></github-corners>
   <label>
     <input type="range" value="160" min="50" max="220" onChange="handleChange(this)" />
   </label>
@@ -21,5 +21,6 @@
       corner.setAttribute('height', target.value);
     }
   </script>
+  <div style="height: 1200px;"></div>
 </body>
 </html>
