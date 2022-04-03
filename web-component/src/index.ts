@@ -75,7 +75,9 @@ export class GithubCorners extends HTMLElement {
   }
   private setAttr(name: string, value: string) {
     const svg = this.shadow.querySelector('svg');
-    if (/(color|fill)/.test(name.toLocaleLowerCase())) {
+    if (/(href)/.test(name.toLocaleLowerCase())) {
+      svg.lastElementChild.setAttribute('xlink:href', value);
+    } else if (/(color|fill)/.test(name.toLocaleLowerCase())) {
       (svg.firstElementChild as HTMLAnchorElement).style[name as any] = value;
     } else if (/(z-index|height|width|position|top|left|right|bottom|transform)/.test(name.toLocaleLowerCase())) {
       svg.style[name as any] = value;
