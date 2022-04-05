@@ -1,6 +1,6 @@
 {
   "name": "@uiw/react-github-corners",
-  "version": "1.5.12",
+  "version": "1.5.13",
   "description": "Add a Github corner to your project page, This GitHub corners for react component.",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -28,7 +28,7 @@
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "@uiw/github-corners": "1.5.12"
+    "@uiw/github-corners": "1.5.13"
   },
   "devDependencies": {
     "@types/react": "~17.0.43",
