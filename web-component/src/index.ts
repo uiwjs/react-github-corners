@@ -25,6 +25,7 @@ GITHUB_CORNERS_TEMPLATE.innerHTML = `
   :host .octo-arm { animation: octocat-wave 560ms ease-in-out; }
 }
 :host svg {
+  z-index: 99;
   position: fixed;
   border: 0px;
   top: 0px;
