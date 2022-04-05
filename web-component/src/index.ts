@@ -24,8 +24,13 @@ GITHUB_CORNERS_TEMPLATE.innerHTML = `
   :host a:hover .octo-arm { animation: none; }
   :host .octo-arm { animation: octocat-wave 560ms ease-in-out; }
 }
+:host svg {
+  position: fixed;
+  border: 0px;
+  top: 0px;
+}
 </style>
-<svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true" style="position: absolute; border: 0px; top: 0px;">
+<svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
   <a xlink:href="https://github.com/uiwjs/react-github-corners" target="_blank" rel="nofollow sponsored" style="fill: rgb(21, 21, 19); color: rgb(255, 255, 255);">
     <g>
       <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -39,8 +44,8 @@ GITHUB_CORNERS_TEMPLATE.innerHTML = `
 export class GithubCorners extends HTMLElement {
   /** Sets the z-order of a positioned element and its descendants or flex items. */
   'z-index'?: string;
-  height?: string;
-  width?: string;
+  height?: string | number;
+  width?: string | number;
   href?: string;
   color?: string;
   fill?: string;
@@ -53,7 +58,7 @@ export class GithubCorners extends HTMLElement {
   transform?: string;
   private shadow: ShadowRoot
   static get observedAttributes(): string[] {
-    return ['z-index', 'target', 'height', 'width', 'href', 'color', 'fill', 'position', 'top', 'left', 'right', 'bottom', 'transform'];
+    return ['style', 'z-index', 'target', 'height', 'width', 'href', 'color', 'fill', 'position', 'top', 'left', 'right', 'bottom', 'transform'];
   }
   constructor() {
     super();
@@ -67,7 +72,7 @@ export class GithubCorners extends HTMLElement {
       svg.lastElementChild.setAttribute('xlink:href', value);
     } else if (/(color|fill)/.test(name.toLocaleLowerCase())) {
       (svg.firstElementChild as HTMLAnchorElement).style[name as any] = value;
-    } else if (/(z-index|height|width|position|top|left|right|bottom|transform)/.test(name.toLocaleLowerCase())) {
+    } else if (/(z-index|position|top|left|right|bottom|transform)/.test(name.toLocaleLowerCase())) {
       svg.style[name as any] = value;
     } else {
       svg.setAttribute(name, value);
