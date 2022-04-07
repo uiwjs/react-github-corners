@@ -25,7 +25,7 @@
     "@kkt/raw-modules": "~7.1.1",
     "@kkt/scope-plugin-options": "~7.1.1",
     "@types/react": "~17.0.43",
-    "@types/react-dom": "~17.0.14",
+    "@types/react-dom": "~18.0.0",
     "kkt": "~7.1.5"
   },
   "eslintConfig": {
