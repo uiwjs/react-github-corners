@@ -17,26 +17,26 @@ Add `@uiw/github-corners` to your project:
 npm i @uiw/github-corners
 ```
 
-Or load the ES module directly through unpkg
+Or load the directly through unpkg
 
 unpkg.com CDN:
 
 ```html
-<script type="module" src="https://unpkg.com/@uiw/github-corners?module"></script>
+<script src="https://unpkg.com/@uiw/github-corners"></script>
 ```
 
 Skypack CDN:
 
 ```html
-<script type="module" src="https://cdn.skypack.dev/@uiw/github-corners"></script>
+<script src="https://cdn.skypack.dev/@uiw/github-corners"></script>
 ```
 
 ## Usage
 
-Import into your module script:
+Import into your script:
 
 ```jsx
-import { GithubCorners } from "@uiw/github-corners";
+import "@uiw/github-corners";
 ```
 
 Use it in your HTML:

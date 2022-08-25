@@ -3,8 +3,7 @@
   "version": "1.5.14",
   "description": "Add a Github corner to your project page, This GitHub corners for web component.",
   "type": "module",
-  "main": "lib/index.js",
-  "module": "lib/index.js",
+  "exports": "./lib/index.js",
   "types": "lib/index.d.ts",
   "homepage": "https://uiwjs.github.io/react-github-corners",
   "repository": {

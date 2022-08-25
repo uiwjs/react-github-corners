@@ -19,5 +19,16 @@
     "@kkt/ncc": "~1.0.13",
     "lerna": "~4.0.0",
     "tsbb": "~3.7.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "workspaces": [
+    "web-component",
+    "react",
+    "website"
+  ],
+  "dependencies": {
+    "ts-node": "^10.6.0"
   }
 }
