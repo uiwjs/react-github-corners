@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ce75e6fd.css",
-    "main.js": "/static/js/main.abd83342.js",
+    "main.js": "/static/js/main.c617df24.js",
     "refractor-prismjs-vendor.js": "/static/js/refractor-prismjs-vendor.ec248941.js",
     "babel-vendor.js": "/static/js/babel-vendor.98891c90.js",
     "parse5-vendor.js": "/static/js/parse5-vendor.f1fb387b.js",
@@ -9,7 +9,7 @@
     "static/media/logo.svg": "/static/media/logo.3931a054f5ef8356122965d973d55570.svg",
     "index.html": "/index.html",
     "main.ce75e6fd.css.map": "/static/css/main.ce75e6fd.css.map",
-    "main.abd83342.js.map": "/static/js/main.abd83342.js.map",
+    "main.c617df24.js.map": "/static/js/main.c617df24.js.map",
     "refractor-prismjs-vendor.ec248941.js.map": "/static/js/refractor-prismjs-vendor.ec248941.js.map",
     "babel-vendor.98891c90.js.map": "/static/js/babel-vendor.98891c90.js.map",
     "parse5-vendor.f1fb387b.js.map": "/static/js/parse5-vendor.f1fb387b.js.map",
@@ -21,6 +21,6 @@
     "static/js/parse5-vendor.f1fb387b.js",
     "static/js/react-vendor.16f64776.js",
     "static/css/main.ce75e6fd.css",
-    "static/js/main.abd83342.js"
+    "static/js/main.c617df24.js"
   ]
 }
