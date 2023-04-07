@@ -22,11 +22,11 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@kkt/raw-modules": "^7.2.0",
-    "@kkt/scope-plugin-options": "^7.2.0",
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "kkt": "^7.2.0"
+    "@kkt/raw-modules": "^7.4.9",
+    "@kkt/scope-plugin-options": "^7.4.9",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "kkt": "^7.4.9"
   },
   "eslintConfig": {
     "extends": [

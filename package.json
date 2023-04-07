@@ -5,10 +5,10 @@
     "demo": "lerna exec --scope @uiw/github-corners -- npx sgo --fallback demo.html",
     "doc": "lerna exec --scope @website/github-corners -- kkt build",
     "start": "lerna exec --scope @website/github-corners -- kkt start",
-    "build": "lerna exec --scope @uiw/react-github-corners -- tsbb build",
-    "watch": "lerna exec --scope @uiw/react-github-corners -- tsbb watch",
-    "build:wc": "lerna exec --scope @uiw/github-corners -- tsbb build --disable-babel",
-    "watch:wc": "lerna exec --scope @uiw/github-corners -- tsbb watch --disable-babel",
+    "build": "lerna exec --scope @uiw/react-github-corners -- tsbb build \"src/*.tsx\" --use-babel",
+    "watch": "lerna exec --scope @uiw/react-github-corners -- tsbb watch \"src/*.tsx\" --use-babel",
+    "build:wc": "lerna exec --scope @uiw/github-corners -- tsbb build",
+    "watch:wc": "lerna exec --scope @uiw/github-corners -- tsbb watch",
     "bundle": "lerna exec --scope @uiw/react-github-corners -- ncc build src/index.tsx --target web --filename github-corners",
     "bundle:min": "lerna exec --scope @uiw/react-github-corners -- ncc build src/index.tsx --target web --filename github-corners --minify",
     "all": "npm run build && npm run bundle && npm run bundle:min && npm run build:wc",
@@ -16,9 +16,9 @@
     "clean": "lerna clean --yes"
   },
   "devDependencies": {
-    "@kkt/ncc": "~1.0.13",
-    "lerna": "~5.4.0",
-    "tsbb": "~3.7.2"
+    "@kkt/ncc": "^1.0.15",
+    "lerna": "^6.6.1",
+    "tsbb": "^4.1.4"
   },
   "engines": {
     "node": ">=16.0.0"
