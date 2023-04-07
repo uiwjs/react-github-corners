@@ -81,15 +81,16 @@ jobs:
             npm i @uiw/github-corners@${{steps.create_tag.outputs.versionNumber}}
             ```
 
-      - name: 📦 @uiw/react-github-corners publish to NPM
-        uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          package: ./react/package.json
+      - run: npm publish --access public
+        name: 📦  @uiw/react-github-corners publish to NPM
+        continue-on-error: true
+        working-directory: react
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: 📦 @uiw/github-corners publish to NPM
-        uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          package: ./web-component/package.json
-      
+      - run: npm publish --access public
+        name: 📦 @uiw/github-corners publish to NPM
+        continue-on-error: true
+        working-directory: web-component
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
