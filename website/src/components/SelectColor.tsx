@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import Sketch from '@uiw/react-color-sketch';
-import { hexToHsva, hsvaToHexa } from '@uiw/color-convert'
+import { hexToHsva, hsvaToHexa } from '@uiw/color-convert';
+import { Button } from '../App';
 
 export interface SelectColorProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'onChange'> {
   onChange?(color: string): void;
@@ -24,7 +25,7 @@ export function SelectColor(props: SelectColorProps) {
   }, [])
   return (
     <Fragment>
-      <button className="select" ref={btnref} style={{ backgroundColor: hsvaToHexa(color) }}>
+      <Button $select ref={btnref} style={{ backgroundColor: hsvaToHexa(color) }}>
         {children}
         {selectColor && (
           <Sketch
@@ -36,7 +37,7 @@ export function SelectColor(props: SelectColorProps) {
             }}
           />
         )}
-      </button>
+      </Button>
     </Fragment>
   )
 }

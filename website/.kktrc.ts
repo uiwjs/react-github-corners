@@ -3,10 +3,12 @@ import webpack from 'webpack';
 import { LoaderConfOptions, WebpackConfiguration } from 'kkt';
 import rawModules from '@kkt/raw-modules';
 import scopePluginOptions from '@kkt/scope-plugin-options';
+import { mdCodeModulesLoader } from 'markdown-react-code-preview-loader';
 import pkg from './package.json';
 
 export default (conf: WebpackConfiguration, env: 'production' | 'development', options: LoaderConfOptions) => {
   conf = rawModules(conf, env, { ...options });
+  conf = mdCodeModulesLoader(conf);
   conf = scopePluginOptions(conf, env, {
     ...options,
     allowedFiles: [
@@ -17,6 +19,7 @@ export default (conf: WebpackConfiguration, env: 'production' | 'development', o
   conf.plugins!.push(new webpack.DefinePlugin({
     VERSION: JSON.stringify(pkg.version),
   }));
+  conf.module!.exprContextCritical = false;
   if (env === 'production') {
     conf.output = { ...conf.output, publicPath: './' };
     conf.optimization = {
