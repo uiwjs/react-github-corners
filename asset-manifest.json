@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5bb9e363.css",
-    "main.js": "/static/js/main.a26796ab.js",
+    "main.css": "/static/css/main.020a7543.css",
+    "main.js": "/static/js/main.3941b6d8.js",
     "refractor-prismjs-vendor.js": "/static/js/refractor-prismjs-vendor.c7983e9b.js",
     "babel-vendor.js": "/static/js/babel-vendor.f929fb35.js",
     "parse5-vendor.js": "/static/js/parse5-vendor.1a505248.js",
     "react-vendor.js": "/static/js/react-vendor.3078e924.js",
     "index.html": "/index.html",
-    "main.5bb9e363.css.map": "/static/css/main.5bb9e363.css.map",
-    "main.a26796ab.js.map": "/static/js/main.a26796ab.js.map",
+    "main.020a7543.css.map": "/static/css/main.020a7543.css.map",
+    "main.3941b6d8.js.map": "/static/js/main.3941b6d8.js.map",
     "refractor-prismjs-vendor.c7983e9b.js.map": "/static/js/refractor-prismjs-vendor.c7983e9b.js.map",
     "babel-vendor.f929fb35.js.map": "/static/js/babel-vendor.f929fb35.js.map",
     "parse5-vendor.1a505248.js.map": "/static/js/parse5-vendor.1a505248.js.map",
@@ -19,7 +19,7 @@
     "static/js/babel-vendor.f929fb35.js",
     "static/js/parse5-vendor.1a505248.js",
     "static/js/react-vendor.3078e924.js",
-    "static/css/main.5bb9e363.css",
-    "static/js/main.a26796ab.js"
+    "static/css/main.020a7543.css",
+    "static/js/main.3941b6d8.js"
   ]
 }
