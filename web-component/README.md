@@ -22,7 +22,7 @@ Or load the directly through unpkg
 unpkg.com CDN:
 
 ```html
-<script src="https://unpkg.com/@uiw/github-corners"></script>
+<script src="https://unpkg.com/@uiw/github-corners/lib/index.js"></script>
 ```
 
 Skypack CDN:
