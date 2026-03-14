@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.020a7543.css",
-    "main.js": "/static/js/main.471a8930.js",
-    "refractor-prismjs-vendor.js": "/static/js/refractor-prismjs-vendor.c7983e9b.js",
-    "babel-vendor.js": "/static/js/babel-vendor.a03db5d5.js",
-    "parse5-vendor.js": "/static/js/parse5-vendor.1a505248.js",
-    "react-vendor.js": "/static/js/react-vendor.3078e924.js",
+    "main.css": "/static/css/main.7ea575dc.css",
+    "main.js": "/static/js/main.9d79bebf.js",
+    "refractor-prismjs-vendor.js": "/static/js/refractor-prismjs-vendor.1909ff35.js",
+    "parse5-vendor.js": "/static/js/parse5-vendor.30ad9b54.js",
+    "react-vendor.js": "/static/js/react-vendor.8bb5107d.js",
+    "babel-vendor.js": "/static/js/babel-vendor.71bc18bc.js",
     "index.html": "/index.html",
-    "main.020a7543.css.map": "/static/css/main.020a7543.css.map",
-    "main.471a8930.js.map": "/static/js/main.471a8930.js.map",
-    "refractor-prismjs-vendor.c7983e9b.js.map": "/static/js/refractor-prismjs-vendor.c7983e9b.js.map",
-    "babel-vendor.a03db5d5.js.map": "/static/js/babel-vendor.a03db5d5.js.map",
-    "parse5-vendor.1a505248.js.map": "/static/js/parse5-vendor.1a505248.js.map",
-    "react-vendor.3078e924.js.map": "/static/js/react-vendor.3078e924.js.map"
+    "main.7ea575dc.css.map": "/static/css/main.7ea575dc.css.map",
+    "main.9d79bebf.js.map": "/static/js/main.9d79bebf.js.map",
+    "refractor-prismjs-vendor.1909ff35.js.map": "/static/js/refractor-prismjs-vendor.1909ff35.js.map",
+    "parse5-vendor.30ad9b54.js.map": "/static/js/parse5-vendor.30ad9b54.js.map",
+    "react-vendor.8bb5107d.js.map": "/static/js/react-vendor.8bb5107d.js.map",
+    "babel-vendor.71bc18bc.js.map": "/static/js/babel-vendor.71bc18bc.js.map"
   },
   "entrypoints": [
-    "static/js/refractor-prismjs-vendor.c7983e9b.js",
-    "static/js/babel-vendor.a03db5d5.js",
-    "static/js/parse5-vendor.1a505248.js",
-    "static/js/react-vendor.3078e924.js",
-    "static/css/main.020a7543.css",
-    "static/js/main.471a8930.js"
+    "static/js/refractor-prismjs-vendor.1909ff35.js",
+    "static/js/parse5-vendor.30ad9b54.js",
+    "static/js/react-vendor.8bb5107d.js",
+    "static/js/babel-vendor.71bc18bc.js",
+    "static/css/main.7ea575dc.css",
+    "static/js/main.9d79bebf.js"
   ]
 }
