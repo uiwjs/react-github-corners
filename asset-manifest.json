@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.7ea575dc.css",
-    "main.js": "/static/js/main.a9d14ddc.js",
+    "main.js": "/static/js/main.a8143284.js",
     "refractor-prismjs-vendor.js": "/static/js/refractor-prismjs-vendor.167b02dd.js",
     "parse5-vendor.js": "/static/js/parse5-vendor.30ad9b54.js",
     "react-vendor.js": "/static/js/react-vendor.8bb5107d.js",
     "babel-vendor.js": "/static/js/babel-vendor.b43fcb0c.js",
     "index.html": "/index.html",
     "main.7ea575dc.css.map": "/static/css/main.7ea575dc.css.map",
-    "main.a9d14ddc.js.map": "/static/js/main.a9d14ddc.js.map",
+    "main.a8143284.js.map": "/static/js/main.a8143284.js.map",
     "refractor-prismjs-vendor.167b02dd.js.map": "/static/js/refractor-prismjs-vendor.167b02dd.js.map",
     "parse5-vendor.30ad9b54.js.map": "/static/js/parse5-vendor.30ad9b54.js.map",
     "react-vendor.8bb5107d.js.map": "/static/js/react-vendor.8bb5107d.js.map",
@@ -20,6 +20,6 @@
     "static/js/react-vendor.8bb5107d.js",
     "static/js/babel-vendor.b43fcb0c.js",
     "static/css/main.7ea575dc.css",
-    "static/js/main.a9d14ddc.js"
+    "static/js/main.a8143284.js"
   ]
 }
