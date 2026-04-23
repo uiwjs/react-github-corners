@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@kkt/ncc": "^1.0.15",
-    "lerna": "^7.1.4",
+    "lerna": "^8.0.0",
     "tsbb": "^4.1.14"
   },
   "engines": {
